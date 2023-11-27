@@ -15,6 +15,9 @@ body{
 a{
     text-decoration: none;
 }
+ul{
+    list-style: none;
+}
 
 .row{
     display: flex;
@@ -24,12 +27,14 @@ a{
 }
 
 header{
-    height: 50px;
+    /* height: 50px; */
     /* background-color: red; */
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 6.64744px 8.2372px 0px
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 6.64744px 8.2372px 0px;
+    height: fit-content;
+    padding: 10px 0 10px 0;
 }
 header .logo{
     display: flex;
@@ -90,4 +95,93 @@ header .register{
     background-color: #545BE8;
 
 }
+
+
+footer{
+    background-color: #393E46;
+    color: white;
+    font-family: Poppins,sans-serif;
+    
+}
+
+footer .row{
+    /* background-color: #7577a4; */
+    margin:auto;
+    padding: 50px 0;
+    display: flex;
+   
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+    
+    
+}
+
+footer .discreption-side .logo{
+    /* background-color: #393E46; */
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    
+
+}
+footer .discreption-side .logo img{
+    width: 35px;
+}
+footer .discreption-side .logo a{
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    color: white;
+}
+
+footer .discreption-side{
+    /* background-color: red; */
+    width: calc( (100% - 40px) / 2 );
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+footer .discreption-side p{
+    width: 70%;
+}
+footer .discreption-side ul{
+    display: flex;
+    gap: 10px;
+}
+
+footer .discreption-side ul li img{
+    width: 20px;
+    height: 20px;
+    border: 1px solid white;
+    box-sizing: content-box;
+    padding: 10px;
+}
+footer .discreption-side ul li img:hover{
+    border: 1px solid transparent;
+}
+
+footer .lists-side{
+    /* background-color: green; */
+    /* width: 800px; */
+    width: calc( (100% - 40px) / 2 );
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 60px;
+}
+footer .lists-side h2{
+    margin-bottom: 30px;
+
+}
+
+footer .lists-side ul { 
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+
+
 
