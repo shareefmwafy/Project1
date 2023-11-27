@@ -29,6 +29,10 @@ ul{
 header{
     /* height: 50px; */
     /* background-color: red; */
+    position: sticky;
+    top: 0;
+    z-index: 5;
+    background-color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -95,6 +99,146 @@ header .register{
     background-color: #545BE8;
 
 }
+.courses{
+    font-family: Poppins,sans-serif;
+}
+
+.courses .row{
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 50px 0px;
+
+
+}
+.courses .container .row .course-items{
+    /* background-color: rebeccapurple; */
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    flex-wrap: wrap;
+    width: calc((100% - 20px) / 2);
+
+}
+.courses .container .row .course-items .course-item{
+    /* background-color: antiquewhite; */
+    width: calc((200% - 40px) / 4);
+    display: block;
+    position: relative;
+}
+.courses .container .row .course-items .course-item::before{
+    content: 'Best Course';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    position: absolute;
+    background-color: #545BE8;
+    width: 120px;
+    height: 40px;
+    top: 40px;
+    border-radius: 0px 10px 10px 0;
+}
+.courses .container .row .course-items .course-item::after{
+    content: '$ 20 USD';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: 800;
+    position: absolute;
+    /* background-color: #545BE8; */
+    width: 130px;
+    height: 40px;
+    bottom: 125px;
+    right: 10px;
+    font-size: 25px;
+}
+.course-item-descreption{
+    height: fit-content;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 6.64744px 8.2372px 0px;
+
+}
+.course-item img{
+    border-radius: 10px 10px 0 0;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+
+    
+}
+.darken{
+    width: 100%;
+    height: 90px;
+    position: absolute;
+    bottom: 116px;
+    background:linear-gradient(to bottom, rgba(0,0,0,0) 10%, rgba(0,0,0,0.9));
+    
+}
+
+.name-views-row{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 10px 20px 10px;
+    height: fit-content;
+
+}
+.videos-teacher-row{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 10px;
+    gap: 20px;
+    padding-bottom: 20px;
+    height: fit-content;
+
+}
+.course-item .views{
+    color: #545BE8;
+}
+.courses .course-descreption{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 40px;
+}
+.course-descreption .availble{
+    color: #545BE8;
+    font-size: 20px;
+}
+.course-descreption h2 {
+    font-weight: 800;
+    font-size: 40px;
+}
+.course-descreption .leorem{
+    width: 60%;
+}
+.course-descreption a{
+    background-color: #545BE8;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 45px;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 footer{
