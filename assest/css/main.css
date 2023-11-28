@@ -171,6 +171,71 @@ header .register{
     width: 70%;
 }
 
+.Course-taking{
+    background: linear-gradient(180deg, #545BE8 0%, #272DB0 100%);
+    padding: 50px 0;
+    font-family: Poppins;
+    margin-bottom: 100px;
+}
+.Course-taking .row{
+    /* justify-content: space-evenly; */
+    flex-wrap: wrap;
+    gap: 50px;
+    
+}
+.learn{
+     width:calc((100% - 50px) / 2); 
+}
+.learn img{
+    width: 60%;
+}
+.statistc{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.statistc h2{
+    color: #F0C932;
+}
+
+.Course-taking-descreption{
+    width:calc((100% - 50px) / 2);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+
+.Course-taking-descreption h2{
+    color: #ffffff;
+    font-size: 40px;
+}
+
+.Course-taking-descreption span{
+    color: white;
+}
+.Course-taking-descreption .select{
+    color: #F0C932;
+    font-size: 22px;
+}
+.Course-taking-descreption p{
+    color: rgb(213, 211, 211);
+    width: 70%;
+}
+
+.people-views{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.people-views h2{
+    color: #F0C932;
+}
+
+
+
 .courses{
     font-family: Poppins,sans-serif;
 }
