@@ -151,6 +151,9 @@ header .register{
 }
 .begin .row .play-video a{
     /* width: 50px; */
+    color: black;
+    font-weight: 700;
+    font-size: 18px;
     
 }
 .begin .row .play-video img{
@@ -170,6 +173,95 @@ header .register{
 .website-photo img{
     width: 70%;
 }
+
+
+.Services{
+    padding: 50px 0;
+    font-family: Poppins;
+    
+}
+
+.Services .service-descreption{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.Services .service-descreption span{
+    color: #545BE8;
+    font-size: 20px;
+}
+.Services .service-descreption h2{
+    font-size: 40px;
+    font-weight: 700;
+}
+.Services .service-descreption p{
+    color: #9e9f9f;
+}
+.Services .service-items{
+    display: flex;
+    gap: 40px;
+    width: 75%;
+    flex-wrap: wrap;
+}
+.Services .service-item{
+    width: calc((100% - 80px) / 3);
+    background-color: #545BE8;
+    padding: 50px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 20px;
+    transition: scale 0.6s;
+}
+.Services .service-item:hover{
+    scale: 1.15;
+}
+.Services .service-item .circle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.Services .service-item img{
+    width: 40px;
+}
+.Services .service-item h2 {
+    color: white;
+}
+.Services .service-item p{
+    color: #DDD;
+}
+.Services .Arrows{
+    display: flex;
+    gap: 20px;
+    justify-content: flex-end;
+    margin-right: 100px;
+}
+.Services .arow{
+    height: 50px;
+    width: 50px;
+    margin-top: 50px;
+    
+    background-color: #F0C932;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.Services .arow img{
+    width: 60%;
+}
+
+
+
+
+
+
 
 .Course-taking{
     background: linear-gradient(180deg, #545BE8 0%, #272DB0 100%);
@@ -408,6 +500,12 @@ header .register{
     box-shadow: 0px 8.2372px 8.2372px 7px rgba(0, 0, 0, 0.10);
     position: relative;
     
+}
+.Testimonial p{
+    color: #838080;
+}
+.Testimonial span{
+    color: #838080;
 }
 .Testimonial::after{
     position: absolute;
