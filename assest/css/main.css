@@ -359,6 +359,7 @@ header .register{
     display: block;
     position: relative;
 }
+
 .courses .container .row .course-items .course-item::before{
     content: 'Best Course';
     display: flex;
@@ -449,6 +450,7 @@ header .register{
     flex-wrap: wrap;
     flex-direction: column;
     gap: 40px;
+    width: calc((100% - 40px) / 2);
 }
 .course-descreption .availble{
     color: #545BE8;
@@ -476,6 +478,22 @@ header .register{
 .course-descreption a:hover{
     background-color: #4e54d5;
 }
+
+@media screen and (max-width:1280px){
+    .courses .container .row .course-items .course-item{
+        
+        width: calc((200% - 40px) / 2);
+    }
+    
+}
+@media screen and (max-width:750px){
+    .courses .container .row .course-items .course-item{
+        
+        width: calc((200% - 40px) / 2);
+            }
+}
+
+
 
 
 .Testimonials{
@@ -536,7 +554,14 @@ header .register{
 }
 
 
+@media screen and (max-width:1030px){
+    .Testimonial{
+        width: 100%;
+        
+  
+    }
 
+}
 
 
 
@@ -626,6 +651,7 @@ footer .lists-side ul {
     align-items: center;
     justify-content: center;
 }
+
 
 
 
