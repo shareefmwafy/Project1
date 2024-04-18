@@ -445,7 +445,7 @@ header .burger{
     flex-wrap: wrap;
     flex-direction: column;
     gap: 20px;
-    padding: 50px 0px;
+    /* padding: 50px 0px; */
 
 
 }
@@ -586,19 +586,28 @@ header .burger{
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    gap: 40px;
-    width: calc((100% - 40px) / 2);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+    width: 100%;
+    margin:auto;
+    margin-bottom: 20px;
 }
 .course-descreption .availble{
     color: #545BE8;
-    font-size: 20px;
+    /* width: 100%; */
+    font-size: 50px;   
+    font-weight: 800;
+
 }
 .course-descreption h2 {
     font-weight: 800;
     font-size: 40px;
 }
 .course-descreption .leorem{
-    width: 60%;
+    width: 100%;
+     color: #9e9f9f;
 }
 .course-descreption a{
     background-color: #545BE8;
@@ -606,7 +615,7 @@ header .burger{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 150px;
+    width: 200px;
     height: 45px;
     border-radius: 10px;
 }
