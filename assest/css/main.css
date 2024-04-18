@@ -20,10 +20,13 @@ ul{
 }
 
 .row{
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    
+    /* background-color: red; */
 }
 
 header{
@@ -39,12 +42,14 @@ header{
     box-shadow: rgba(0, 0, 0, 0.1) 0px 6.64744px 8.2372px 0px;
     height: fit-content;
     padding: 20px 0 ;
+    width: 100%;
 }
 header .logo{
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
+    
 }
 
 header .logo-img{
@@ -77,10 +82,13 @@ header .athu{
     display: flex;
     gap: 15px;
     flex-wrap: wrap;
+    
+    
 }
 
 header .athu a{
     display: flex;
+    
     justify-content: center;
     align-items: center;
     /* padding: 10px; */
@@ -99,6 +107,43 @@ header .register{
     background-color: #545BE8;
 
 }
+header button{
+    border: none;
+    outline: none;
+    background-color: #545BE8;
+    color: #fff;
+    padding: 5px 7px;
+    border-radius:5px;
+    cursor: pointer;
+    display: none;
+}
+header .burger{
+    width: 35px;
+    background-color: transparent;
+    
+}
+
+@media screen and (max-width: 970px){
+    header .nav ul{
+        display: none;
+    }
+    header button{
+        display: flex;
+    }
+    header .athu{
+        margin: auto;
+    }
+}
+@media screen and (max-width: 690px){
+    header .athu{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 690px){
+
+}
+
 
 .introduction{
     margin: 100px 0;
@@ -176,36 +221,90 @@ header .register{
 
 
 .Services{
-    padding: 50px 0;
+    /* padding: 50px 0; */
     font-family: Poppins;
+    width: 100%;
+    padding-bottom: 10px;
     
+}
+.Services .row{
+    /* background-color: red; */
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+    
+    align-items: center;
+    /* background-color: red; */
 }
 
 .Services .service-descreption{
-    width: 25%;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 15px;
+    margin-bottom: 40px;
 }
+
+
 .Services .service-descreption span{
     color: #545BE8;
-    font-size: 20px;
+    font-size: 60px;
+    font-weight: 800;
 }
 .Services .service-descreption h2{
     font-size: 40px;
     font-weight: 700;
+    letter-spacing: 5px;
 }
 .Services .service-descreption p{
     color: #9e9f9f;
 }
+@media screen and (max-width: 550px){
+    .Services .service-descreption span{
+        font-size: 40px;
+    }
+    .Services .service-descreption h2{
+        font-size: 16px;
+    }
+    .Services .service-descreption p{
+        font-size: 10px;
+    }
+    .Services .service-item img{
+        width: 25px;
+    }
+    .Services .service-item h2 {
+        font-size: 17px;
+    }
+    .Services .service-item p{
+        font-size: 10px;
+    }
+
+}
+@media screen and (max-width: 408px){
+    .Services .service-descreption span{
+        font-size: 27px;
+    }
+    .Services .service-descreption h2{
+        font-size: 13px;
+    }
+    .Services .service-descreption p{
+        font-size: 8px;
+    }
+}
 .Services .service-items{
     display: flex;
+    width: 100%;
     gap: 40px;
-    width: 75%;
     flex-wrap: wrap;
+    justify-content: center
+    
 }
+
 .Services .service-item{
-    width: calc((100% - 80px) / 3);
+    width: 300px;
     background-color: #545BE8;
     padding: 50px 20px;
     display: flex;
@@ -214,6 +313,7 @@ header .register{
     border-radius: 20px;
     transition: scale 0.6s;
 }
+
 .Services .service-item:hover{
     scale: 1.06;
 }
@@ -521,6 +621,7 @@ header .register{
 }
 .Testimonial p{
     color: #838080;
+    width: 100%;
 }
 .Testimonial span{
     color: #838080;
@@ -532,14 +633,9 @@ header .register{
     top: 0;
     right: 0;
     content: '';
-
-
 }
 .Testimonial img{
     width: 150px;
-}
-.Testimonial p{
-    width: 70%;
 }
 .Testimonial .user-details img{
     height: 50px;
@@ -554,6 +650,7 @@ header .register{
 }
 
 
+
 @media screen and (max-width:1030px){
     .Testimonial{
         width: 100%;
@@ -561,6 +658,38 @@ header .register{
   
     }
 
+}
+
+@media screen and (max-width:370px){
+    .Testimonials h2{
+        font-size: 30px;
+    }
+    .Testimonial .user-image{
+        width: 0px;
+    }
+    .Testimonial h3{
+        font-size: 14px;
+    }
+    .Testimonial p{
+        width: 100%;
+        font-size: 11px;
+    }
+    .Testimonial span{
+        color: #838080;
+        font-size: 12px;
+    }
+    .Testimonial .star{
+        width: 100px;
+    }
+
+    .Testimonial::after{
+        position: absolute;
+        border-left: 50px solid transparent;
+        border-top: 50px solid rgb(225, 225, 225);
+        top: 0;
+        right: 0;
+        content: '';
+    }
 }
 
 
