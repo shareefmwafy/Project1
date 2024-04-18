@@ -48,6 +48,7 @@ header{
     height: fit-content;
     padding: 20px 0 ;
     width: 100%;
+    /* height:500px; */
 }
 header .logo{
     display: flex;
@@ -145,8 +146,13 @@ header .burger{
     }
 }
 
-@media screen and (max-width: 690px){
-
+@media screen and (max-width: 400px){
+    header .logo a{
+        font-size: 13px;
+    }
+    button .burger{
+        width:25px;
+    }
 }
 
 
@@ -890,7 +896,7 @@ footer .discreption-side{
     gap: 40px;
 }
 footer .discreption-side p{
-    width: 70%;
+    width: 100%;
 }
 footer .discreption-side ul{
     display: flex;
@@ -929,7 +935,21 @@ footer .lists-side ul {
     align-items: center;
     justify-content: center;
 }
-
+footer .lists-side ul a{
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    color: white;
+}
+@media screen and (max-width: 650px) {
+    
+    footer .row{
+        flex-direction: column;
+    }
+    .lists-side{
+        width: 100%;
+        flex-direction: row;
+    }
+}
 
 
 
