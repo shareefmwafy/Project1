@@ -6,6 +6,11 @@
 }
 body{
     background-color: #fff;
+   
+}
+main{
+    max-width: 2000px;
+    margin: auto;
 }
 .container{
     width: calc(100% - 120px);
@@ -438,6 +443,7 @@ header .burger{
     justify-content: space-between;
     align-items: flex-start;
     flex-wrap: wrap;
+    flex-direction: column;
     gap: 20px;
     padding: 50px 0px;
 
@@ -450,14 +456,31 @@ header .burger{
     align-items: flex-start;
     gap: 20px;
     flex-wrap: wrap;
-    width: calc((100% - 20px) / 2);
+    width: 100%
 
 }
 .courses .container .row .course-items .course-item{
     /* background-color: antiquewhite; */
-    width: calc((200% - 40px) / 4);
+    width: 400px;
     display: block;
     position: relative;
+    align-self: flex-start;
+}
+
+@media screen and (max-width:1780px) {
+    .courses .container .row .course-items .course-item{
+        width: calc(33.33% - 40px);
+    }
+}
+@media screen and (max-width:1360px) {
+    .courses .container .row .course-items .course-item{
+        width: calc(50% - 20px);
+    }
+}
+@media screen and (max-width:770px) {
+    .courses .container .row .course-items .course-item{
+        width: 100%;
+    }
 }
 
 .courses .container .row .course-items .course-item::before{
@@ -533,6 +556,20 @@ header .burger{
     height: fit-content;
 
 }
+@media screen and (max-width: 410px){
+    .course-item .views{
+        font-size: 11px;
+    }
+    .course-item h2{
+        font-size: 15px;
+    }
+    .videos-teacher-row{
+        font-size: 14px;
+    }
+    .darken{
+        bottom: 100px;   
+    }
+}
 .videos-teacher-row{
     display: flex;
     flex-wrap: wrap;
@@ -579,7 +616,7 @@ header .burger{
     background-color: #4e54d5;
 }
 
-@media screen and (max-width:1280px){
+/* @media screen and (max-width:1280px){
     .courses .container .row .course-items .course-item{
         
         width: calc((200% - 40px) / 2);
@@ -591,7 +628,7 @@ header .burger{
         
         width: calc((200% - 40px) / 2);
             }
-}
+} */
 
 
 
