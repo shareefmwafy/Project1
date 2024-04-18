@@ -151,9 +151,10 @@ header .burger{
 
 
 .introduction{
-    margin: 100px 0;
+    margin-top: 10px;
+
     background-color: #F5F5F5;
-    padding: 10px 0;
+    padding: 5px 0;
     font-family: Poppins;
 }
 .introduction .container .row{
@@ -469,7 +470,7 @@ header .burger{
 }
 
 .Course-taking-descreption{
-    width:calc((100% - 50px) / 2);
+    width:100%;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -491,7 +492,7 @@ header .burger{
 }
 .Course-taking-descreption p{
     color: rgb(213, 211, 211);
-    width: 70%;
+    width: 100%;
 }
 
 .people-views{
@@ -696,6 +697,34 @@ header .burger{
 
 .course-descreption a:hover{
     background-color: #4e54d5;
+}
+
+@media screen and (max-width: 450px){
+    .course-descreption .availble{
+        color: #545BE8;
+        /* width: 100%; */
+        font-size: 35px;   
+        font-weight: 800;
+    
+    }
+    .course-descreption h2 {
+        font-weight: 800;
+        font-size: 30px;
+    }
+    .course-descreption .leorem{
+        width: 100%;
+         color: #9e9f9f;
+    }
+    .course-descreption a{
+        background-color: #545BE8;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 200px;
+        height: 45px;
+        border-radius: 10px;
+    }
 }
 
 /* @media screen and (max-width:1280px){
