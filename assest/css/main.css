@@ -900,7 +900,10 @@ footer .discreption-side p{
 }
 footer .discreption-side ul{
     display: flex;
+    flex-wrap: wrap;
     gap: 10px;
+    
+    
 }
 
 footer .discreption-side ul li img{
@@ -910,6 +913,7 @@ footer .discreption-side ul li img{
     box-sizing: content-box;
     padding: 10px;
 }
+
 footer .discreption-side ul li img:hover{
     border: 1px solid transparent;
 }
@@ -934,13 +938,25 @@ footer .lists-side ul {
     gap: 10px;
     align-items: center;
     justify-content: center;
+    text-align: center;
 }
 footer .lists-side ul a{
     font-family: "Roboto", sans-serif;
     font-weight: 700;
     color: white;
 }
-@media screen and (max-width: 650px) {
+footer .contactUs{
+    text-align: center;
+
+}
+
+@media screen and (max-width: 910px){
+    footer .discreption-side p{
+        font-size: 15px;
+    }
+}
+
+/* @media screen and (max-width: 650px) {
     
     footer .row{
         flex-direction: column;
@@ -949,10 +965,12 @@ footer .lists-side ul a{
         width: 100%;
         flex-direction: row;
     }
+} */
+
+
+.sign-made{
+    text-align: center;
 }
-
-
-
 .sign-made p{
     font-size: 20px;
     width: 100%;
