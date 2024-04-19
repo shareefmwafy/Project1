@@ -116,7 +116,9 @@ header .register{
 header button{
     border: none;
     outline: none;
-    background-color: #545BE8;
+    /* background-color: #545BE8; */
+    background-color: white;
+    border: 1px solid #545BE8;
     color: #fff;
     padding: 5px 7px;
     border-radius:5px;
@@ -756,6 +758,7 @@ header .burger{
     gap: 40px;
     font-family: Poppins;
     margin-top: 40px;
+    /* background-color: red; */
     
 }
 .Testimonials h2{
@@ -809,13 +812,11 @@ header .burger{
 @media screen and (max-width:1030px){
     .Testimonial{
         width: 100%;
-        
-  
     }
 
 }
 
-@media screen and (max-width:370px){
+@media screen and (max-width:500px){
     .Testimonials h2{
         font-size: 30px;
     }
